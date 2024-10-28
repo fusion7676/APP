@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="animated-title">TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input type="text" formControlName="username" id="login-username"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" id="login-password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="!loginForm.valid" class="small-button iniciar-sesion">
+      Iniciar Sesión
+    </ion-button>
+
+    <ion-button expand="full" routerLink="/reset-password" fill="outline" class="small-button olvidaste-contrasena">
+      ¿Olvidaste tu contraseña?
+    </ion-button>
+    
+    <ion-button expand="full" routerLink="/register" fill="outline" class="small-button registrarse">
+      Registrarse
+    </ion-button>
+  </form>
+</ion-content>
+
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">

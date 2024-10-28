@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="animated-title">REGISTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" formControlName="firstName" required></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Primer Apellido</ion-label>
+      <ion-input type="text" formControlName="lastName" required></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Crea un Usuario</ion-label>
+      <ion-input type="text" formControlName="username" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Crea Tu Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" required></ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" type="submit" [disabled]="!registerForm.valid">
+      Registrarse
+    </ion-button>
+    <ion-label color="success" *ngIf="successMessage">{{ successMessage }}</ion-label>
+    <ion-label color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-label>
+  </form>
+</ion-content>
+
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">

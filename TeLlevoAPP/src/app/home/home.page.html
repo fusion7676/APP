@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-title class="animated-title">TeLlevoAPP</ion-title>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container" style="text-align: center; margin-top: 20px;">
+    <h1>Bienvenido {{ username }}</h1>
+    
+    <ion-button expand="large" routerLink="/buscar-vehiculo" color="primary" style="margin: 10px;">
+      Busco Vehículo
+    </ion-button>
+    
+    <ion-button expand="large" routerLink="/ofrecer-vehiculo" color="secondary" style="margin: 10px;">
+      Ofrezco Vehículo
+    </ion-button>
+  </div>
+</ion-content>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">

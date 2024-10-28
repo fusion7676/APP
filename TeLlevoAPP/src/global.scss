@@ -1,0 +1,105 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ */
+
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+ion-app {
+    background-color: black;
+}
+
+ion-content {
+    background-color: black;
+    color: orange; 
+}
+
+.animated-title {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScale 2s infinite;
+    text-align: center;
+    font-family: 'Protest Guerrilla', sans-serif; 
+    color: rgb(255, 0, 162);
+    font-size: 48px;
+}
+
+@keyframes fadeInScale {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.small-button {
+    --padding-start: 4px;
+    --padding-end: 4px;
+    --min-height: 25px;
+    --border-radius: 5px;
+    font-size: 14px;
+}
+
+ion-button {
+  &.iniciar-sesion {
+    --background: #800080; 
+    --color: white;
+  }
+
+  &.olvidaste-contrasena {
+    --background: #c85fc8; 
+    --color: white;
+  }
+
+  &.registrarse {
+    --background: #993399; 
+    --color: white;
+  }
+}
+
+:root {
+  --ion-color-primary: #800080;
+  --ion-color-secondary: #A64DB9; 
+  --ion-color-primary-rgb: 128, 0, 128;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #6b006b;
+  --ion-color-primary-tint: #993399;
+}
+
+
+
+
+  
+  
+  
+  
+  
+  

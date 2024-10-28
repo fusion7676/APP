@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="animated-title">PASAJERO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Buscar Vehículo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Universidad de Santiago</ion-card-title>
+      <ion-card-subtitle>No Disponible</ion-card-subtitle>
+      <ion-button expand="full" color="medium" disabled>Ir Ahora</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Universidad de Chile</ion-card-title>
+      <ion-card-subtitle>Distancia: 10 km</ion-card-subtitle>
+      <ion-card-subtitle>Asientos disponibles: 4</ion-card-subtitle>
+      <ion-card-subtitle>Precio: {{ (10 * 2000 * 4) }} CLP</ion-card-subtitle>
+      <ion-button expand="full" color="primary" (click)="null">Pedir Ahora</ion-button>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">

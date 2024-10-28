@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="animated-title">CONDUCTOR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ofrecer Vehículo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Universidad de Chile</ion-card-title>
+      <ion-card-subtitle>Distancia: 2 km</ion-card-subtitle>
+      <ion-card-subtitle>Cantidad de personas: 3</ion-card-subtitle>
+      <ion-card-subtitle>Dinero que ganarías: {{ (2 * 2000 * 3) }} CLP</ion-card-subtitle>
+      <ion-button expand="full" color="primary" (click)="null">Ir Ahora</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Universidad de Santiago</ion-card-title>
+      <ion-card-subtitle>Distancia: 10 km</ion-card-subtitle>
+      <ion-card-subtitle>Cantidad de personas: 2</ion-card-subtitle>
+      <ion-card-subtitle>Dinero que ganarías: {{ (10 * 2000 * 2) }} CLP</ion-card-subtitle>
+      <ion-button expand="full" color="primary" (click)="null">Ir Ahora</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pontificia Universidad Católica</ion-card-title>
+      <ion-card-subtitle>Distancia: 15 km</ion-card-subtitle>
+      <ion-card-subtitle>Cantidad de personas: 1</ion-card-subtitle>
+      <ion-card-subtitle>Dinero que ganarías: {{ (15 * 2000 * 1) }} CLP</ion-card-subtitle>
+      <ion-button expand="full" color="primary" (click)="null">Ir Ahora</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
+
+
+
+
+
+
+
